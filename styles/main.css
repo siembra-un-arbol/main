@@ -42,12 +42,16 @@
   background: var(--select-background);
   color: var(--select-text);
 }
-body {
+body , #google_translate_element{
   width: 100vw;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   font-family: "Montserrat";
+  position: relative;
+}
+#body{
+  top: 0 !important;
 }
 h1,
 h2,
@@ -138,6 +142,7 @@ nav {
   display: flex;
   align-items: center;
   position: fixed;
+  z-index: 5;
 }
 nav label {
   height: 100%;
@@ -161,6 +166,21 @@ nav .menu {
 nav .navigation {
   display: none;
   text-decoration: none;
+}
+
+/*general.translate-widget*/
+.goog-te-gadget{
+  position: absolute;
+  top:3rem;
+  left:0;
+  visibility:hidden;
+  z-index: 0;
+}
+.goog-te-gadget > div{
+  visibility: visible;
+}
+.VIpgJd-ZVi9od-ORHb-OEVmcd{
+  display:none;
 }
 
 /*general.floating-button*/

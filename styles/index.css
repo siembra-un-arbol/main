@@ -14,7 +14,7 @@ header {
   flex-wrap: wrap;
   text-align: center;
 
-  /*  overflow-x: hidden;*/
+  /* overflow-x: hidden;*/
   background-image: url("../resources/images/banner.jpg");
   background-position: center center;
   background-attachment: fixed;
